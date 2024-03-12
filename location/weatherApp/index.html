@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location App</title>
+    <link rel="stylesheet" href="location.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Heading-->
+        <div class="heading">
+            <h1>Weather App</h1>
+        </div>
+        <!-- Tabs -->
+        <div class="tabs">
+            <div class="landingTab" land>Your Weather</div>
+            <div class="searchTab" search-tab>Search Weather</div>
+        </div>
+        <!-- Grant access part -->
+        <div class="grant-access" grantAccessContainer>
+            <img src="map.png" loading="lazy" height="150" width="150">
+            <h2>Grant Access</h2>
+            <p>Allow Access to grant Weather Informtion</p>
+            <button id="grant-btn" onclick="grantAccess()">Grant Access</button>
+        </div>
+        <!-- form part search tab -->
+        <form class="form-container" formContainer>
+            <input type="text" placeholder="Enter City" id="inputCity">
+            <div class="search" submitButton>
+                &nbsp;<img src="search.png" height="20" width="20" loading="lazy">
+                Search
+            </div>
+        </form>
+        <!-- Loading Screen -->
+        <div class="loading" loadingContainer>
+            <img src="waiting monkey.gif" height="200" width="200">
+            <p id="loadingText">Loading...</p>
+        </div>
+        <!-- Landing Screen -->
+        <div class="landingScreen" landingContainer>
+            <div class="name-img" name-image>
+                <p id="cityName" city></p>
+                <img id="cityImage" image>
+            </div>
+            <p id="cond" condition></p>
+            <div>
+                <img id="cond-image" condition-image>
+            </div>
+            <div class="tem">
+                <p id="temperatureData" temperature></p>
+                <p id="temperatureData">&nbsp;&nbsp;°C</p>
+            </div>
+            <div class="divContainer">
+                <div class="div">
+                    <img class="imageAll" src="wind.svg">
+                    <br>
+                    Wind Speed
+                    <br>
+                    <span windspeed></span>&nbsp;m/s
+                </div>
+                <div class="div">
+                    <img id="humi" class="imageAll" src="humidity.png">
+                    <br>
+                    Humidity
+                    <br>
+                    <span humidity></span>&nbsp;%
+                </div>
+                <div class="div">
+                    <img class="imageAll" src="cloud.svg">
+                    <br>
+                    Clouds
+                    <br>
+                    <span clouds></span>&nbsp;%
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="location.js"></script>
+</body>
+
+</html>

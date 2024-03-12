@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Modal | Sudhanshu</title>
+    <link rel="short icon" href="icons/user-regular.svg" type="image/x-icon">
+    <link rel="stylesheet" href="index2.css">
+</head>
+<body>
+    <div class="wrapperparent">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="wrapper">
+            <div class="card-wrapper">
+                <div class="image">
+                    <img src="clear.jpg" height="150" width="150" style="border: 2px solid #ffffff30; border-radius: 50%;" alt="user">
+                </div>
+                <div class="user-name">
+                    <h2>Sudhanshu Shekhar</h2>
+                </div>
+                <div class="designation">
+                    <!-- <h3>MCA</h3> -->
+                    <h3>Computer Science Student</h3>
+                    <h3>BHU</h3>
+                </div>
+                <div class="bottom-group">
+                    <button onclick="open_modal()" class="btn-share btn-card">
+                        <img src="icons/share-nodes-solid.svg" height="20" width="20" alt="share">
+                        <div>Share Profile</div>
+                    </button>
+                    <button class="btn-follow btn-card" onclick="newwindow()">
+                        <img src="icons/user-plus-solid.svg" height="20" width="20" alt="follow">
+                        Follow me
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal-header">
+                <h1>Share My Profile</h1>
+                <div>
+                    <button onclick="close_modal()" class="close">
+                        <img src="icons/xmark-solid.svg" alt="close"></button>
+                </div>
+            </div>
+            <div>
+                <h3>Share via</h3>
+                <div class="icon-container">
+                    <a href="https://images.app.goo.gl/X2KjnczW7hoLFBoY8" class="icon" id="facebook">
+                        <img src="icons/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="https://www.instagram.com/_anshu__prajapati_/" class="icon" id="facebook">
+                        <img src="icons/linkedin.svg" alt="instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/sudhanshu-shekhar-7979b2214/" class="icon" id="instagram">
+                        <img src="icons/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/sudhanshu-shekhar-7979b2214/" class="icon" id="facebook">
+                        <img src="icons/linkedin.svg" alt="linkedin">
+                    </a>
+                    <a href="https://www.instagram.com/_anshu__prajapati_/" class="icon" id="telegram">
+                        <img src="icons/envelope-solid.svg" alt="telegram">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="overlay" onclick="close_modal()"></div>
+    </div>
+    <script src="modal.js"></script>
+</body>
+
+</html>

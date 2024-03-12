@@ -1,0 +1,38 @@
+.wrapper{
+    background-color: aqua;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.iandd{
+    font-weight: bold;
+    color: rgb(22, 78, 78);
+    font-size: 25px;
+}
+.counter{
+    background-color: aliceblue;
+    display: flex;
+    font-size: 25px;
+    color: rgb(11, 64, 110);
+    border-radius: 5px;
+    padding: 6px;
+    gap: 15px;
+    
+}
+.minus{
+    border-right: 2px;
+    border-color: black;
+    padding-right: 15px;
+}
+.num{
+    font-weight: bold;
+}
+.plus{
+    border-left: 2px;
+    border-color: black;
+    padding-left: 15px;
+}

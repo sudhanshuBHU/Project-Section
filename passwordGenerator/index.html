@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="mouseShadow"></div>
+    <div class="wrapper">
+        <!-- <div class="heading">
+            <p>Password Generator</p>
+            <hr>
+        </div> -->
+        <div class="container">
+            <fieldset>
+                <legend>Password Generator</legend>
+
+                <div class="output">
+                    <textarea name="PASSWORD" id="password" cols="30" rows="2"></textarea>
+                    <!-- <input type="text" id="password" placeholder="PASSWORD" readonly /> -->
+                    <button onclick="copyf()" id="copy">
+                        <span id="copiedMsg">Copied</span>
+                    <img src="copy-regular.svg" alt="copied" id="copiedImg">
+                </button>
+                </div>
+                <div class="passwordlength">
+                    Password Length--------------
+                    <span id="outputlength">5</span>
+                </div>
+
+                <div class="slide">
+                    <input type="range" min="0" max="20" value="6" id="slider">
+                </div>
+                <br>
+                <div class="form">
+                    <input type="checkbox" id="uppercase" class="box">
+                    <label for="uppercase" class="labels">Includes Only Uppercase Letters</label>
+                    <br>
+                    <input type="checkbox" id="lowercase" class="box">
+                    <label for="uppercase" class="labels">Includes Only Lowercase Letters</label>
+                    <br>
+                    <input type="checkbox" id="number" class="box">
+                    <label for="uppercase" class="labels">Includes Only Numbers</label>
+                    <br>
+                    <input type="checkbox" id="special" class="box">
+                    <label for="uppercase" class="labels">Includes Only Special Characters</label>
+                </div>
+                <div class="strength">
+                    <strong>Strength: </strong>
+                    <progress value="0" max="3" id="strenghtBar"></progress>
+
+                </div>
+                <!-- <input type="submit" value="Generate Password" /> -->
+                <div class="btn">
+                    <button onclick="reset()" id="reset">Reset</button>
+                    <button onclick="generate()" id="submit">Generate Password</button>
+                </div>
+            </fieldset>
+        </div>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
